@@ -1,0 +1,48 @@
+
+# Spring Boot configuration
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+  profiles:
+    active: development
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/WellnessAxis
+    username: tejamanne
+    password: Test!234
+  # JPA properties
+  jpa:
+    properties:
+      generate_statistics: true
+      use_sql_comments: true
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    #generate-ddl: false
+# Logger configuration
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    org.springframework.transaction.interceptor: TRACE
+    #org.hibernate: DEBUG
+# Server configuration
+server:
+  port: 8080
+  sessionTimeout: 30
+  servlet:
+    context-path: /wellnessaxis/api
+# Security configuration
+security:
+  user:
+    name: user
+    password: user
+
