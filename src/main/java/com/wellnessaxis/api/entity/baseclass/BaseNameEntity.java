@@ -8,7 +8,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @MappedSuperclass
-public class BaseDimensionEntity extends BaseNameEntity {
-    @Column(name = "dimension_id", nullable = false)
-    protected String dimensionId;
+public class BaseNameEntity extends BaseEntity{
+    @Column(name = "name", nullable = false)
+    protected String name;
+
+    @Column(name = "desc", nullable = false)
+    protected String desc;
 }

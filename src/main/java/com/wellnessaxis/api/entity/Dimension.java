@@ -1,6 +1,7 @@
 package com.wellnessaxis.api.entity;
 
 import com.wellnessaxis.api.entity.baseclass.BaseDimensionEntity;
+import com.wellnessaxis.api.entity.baseclass.BaseNameEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,7 +12,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Dimension extends BaseDimensionEntity {
+public class Dimension extends BaseNameEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
