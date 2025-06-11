@@ -11,8 +11,8 @@ spring:
   # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/WellnessAxis
-    username: tejamanne
+    url: jdbc:postgresql://mywellnessaxis-tm.cfc88w8w4xbr.eu-north-1.rds.amazonaws.com:5432/mywellnessaxis?currentSchema=dimension
+    username: catalyston
     password: Test!234
   # JPA properties
   jpa:
@@ -39,7 +39,7 @@ server:
   port: 8081
   sessionTimeout: 30
   servlet:
-    context-path: /wellnessaxis/dimensions/api
+    context-path: /wellnessaxis/dimension/api
 # Security configuration
 security:
   user:
