@@ -1,2 +1,2 @@
-# wellnessaxis-api
-API for Wellness Axis application
+# wellnessaxis-dimensions-api
+API for Wellness Axis Dimensions

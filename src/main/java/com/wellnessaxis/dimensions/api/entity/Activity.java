@@ -1,17 +1,17 @@
-package com.wellnessaxis.api.entity;
+package com.wellnessaxis.dimensions.api.entity;
 
-import com.wellnessaxis.api.entity.baseclass.BaseDimensionEntity;
+import com.wellnessaxis.dimensions.api.entity.baseclass.BaseDimensionEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "sleep", schema = "dimension")
+@Table(name = "activities", schema = "dimension")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Sleep extends BaseDimensionEntity {
+public class Activity extends BaseDimensionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

@@ -1,10 +1,10 @@
-package com.wellnessaxis.api;
+package com.wellnessaxis.dimensions.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WellnessAxisApiApplicationTests {
+class WellnessAxisDimensionsApiApplicationTests {
 
 	@Test
 	void contextLoads() {

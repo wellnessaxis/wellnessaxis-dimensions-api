@@ -1,6 +1,6 @@
-package com.wellnessaxis.api.repository;
+package com.wellnessaxis.dimensions.api.repository;
 
-import com.wellnessaxis.api.entity.Dimension;
+import com.wellnessaxis.dimensions.api.entity.Dimension;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

@@ -1,6 +1,6 @@
-package com.wellnessaxis.api.entity;
+package com.wellnessaxis.dimensions.api.entity;
 
-import com.wellnessaxis.api.entity.baseclass.BaseDimensionEntity;
+import com.wellnessaxis.dimensions.api.entity.baseclass.BaseDimensionEntity;
 import jakarta.persistence.*;
 import lombok.*;
 

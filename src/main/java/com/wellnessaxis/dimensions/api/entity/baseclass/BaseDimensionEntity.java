@@ -1,4 +1,4 @@
-package com.wellnessaxis.api.entity.baseclass;
+package com.wellnessaxis.dimensions.api.entity.baseclass;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;

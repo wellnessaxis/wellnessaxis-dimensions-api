@@ -1,13 +1,13 @@
-package com.wellnessaxis.api;
+package com.wellnessaxis.dimensions.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WellnessAxisApiApplication {
+public class WellnessAxisDimensionsApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WellnessAxisApiApplication.class, args);
+		SpringApplication.run(WellnessAxisDimensionsApiApplication.class, args);
 	}
 
 }

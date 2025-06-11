@@ -1,4 +1,4 @@
-package com.wellnessaxis.api.config;
+package com.wellnessaxis.dimensions.api.config;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.metamodel.Type;

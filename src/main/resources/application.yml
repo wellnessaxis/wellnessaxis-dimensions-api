@@ -39,7 +39,7 @@ server:
   port: 8081
   sessionTimeout: 30
   servlet:
-    context-path: /wellnessaxis/api
+    context-path: /wellnessaxis/dimensions/api
 # Security configuration
 security:
   user:
