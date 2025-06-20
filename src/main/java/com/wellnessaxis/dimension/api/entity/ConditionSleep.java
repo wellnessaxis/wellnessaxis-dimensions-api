@@ -19,4 +19,16 @@ public class ConditionSleep extends BaseConditionMapEntity {
 
     @Column(name = "sleep_id")
     private Integer sleepId;
+
+    @Column(name = "title", nullable = false)
+    protected String title;
+
+    @Column(name = "desc", nullable = false)
+    protected String desc;
+
+    @Column(name = "condition_id", nullable = false)
+    protected String conditionId;
+
+    @Column(name = "impact_level", nullable = false)
+    protected Integer impactLevel;
 }

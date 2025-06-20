@@ -17,7 +17,7 @@ public class ConditionCategory extends BaseEntity {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "title", nullable = false)
+    @Column(name = "name", nullable = false)
     protected String title;
 
     @Column(name = "desc", nullable = false)

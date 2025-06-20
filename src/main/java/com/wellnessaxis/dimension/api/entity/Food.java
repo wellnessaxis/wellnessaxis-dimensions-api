@@ -1,6 +1,6 @@
 package com.wellnessaxis.dimension.api.entity;
 
-import com.wellnessaxis.dimension.api.entity.baseclass.BaseDimensionEntity;
+import com.wellnessaxis.dimension.api.entity.baseclass.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,9 +11,18 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Food extends BaseDimensionEntity {
+public class Food extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
+
+    @Column(name = "dimension_id", nullable = false)
+    protected String dimensionId;
+
+    @Column(name = "name", nullable = false)
+    protected String name;
+
+    @Column(name = "desc", nullable = false)
+    protected String desc;
 }

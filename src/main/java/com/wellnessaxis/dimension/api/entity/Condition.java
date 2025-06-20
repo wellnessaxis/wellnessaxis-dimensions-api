@@ -1,7 +1,6 @@
 package com.wellnessaxis.dimension.api.entity;
 
-import com.wellnessaxis.dimension.api.entity.baseclass.BaseDimensionEntity;
-import com.wellnessaxis.dimension.api.entity.baseclass.BaseNameEntity;
+import com.wellnessaxis.dimension.api.entity.baseclass.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -12,7 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Condition extends BaseNameEntity {
+public class Condition extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -20,4 +19,10 @@ public class Condition extends BaseNameEntity {
 
     @Column(name = "condition_category_id")
     private Integer conditionCategoryId;
+
+    @Column(name = "name", nullable = false)
+    protected String name;
+
+    @Column(name = "desc", nullable = false)
+    protected String desc;
 }
